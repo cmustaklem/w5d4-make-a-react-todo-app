@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List-erooni</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Stylesheets go here. -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/global.css" />
+</head>
+<body>
+  <header class="container-fluid">
+    <div class="text-center">
+      <h2>To-Do List-erooni</h2>
+    </div>
+  </header>
+  <main><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="panel panel-default">
+            <div class="panel-heading formTitle">
+              <h5>Something new</h5>
+            </div>
+            <div class="panel-body">
+
+              <div class="form-group paddingForm"> <!-- Name field -->
+                <label class="control-label " for="name">Date</label>
+                <input class="form-control col-m-10" id="date" name="name" type="date"/>
+              </div>
+
+              <div class="form-group paddingForm"> <!-- Email field -->
+                <label class="control-label requiredField" for="time">Time<span class="asteriskField">*</span></label>
+                <input class="form-control col-m-10" id="time" name="time" type="time"/>
+              </div>
+
+              <div class="form-group paddingForm"> <!-- Subject field -->
+                <label class="control-label " for="location">Location</label>
+                <input class="form-control col-m-10" id="location" name="location" type="text"/>
+              </div>
+
+              <div class="form-group paddingForm"> <!-- Message field -->
+                <label class="control-label " for="notes">Notes</label>
+                <textarea class="form-control col-m-10" cols="40" id="notes" name="notes" rows="3"></textarea>
+              </div>
+
+              <div class="form-group paddingForm">
+                <button class="btn btn-primary " id="addBtn" type="button">Submit</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="table-responsive" id="todos">
+                <!-- Todos component goes here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</main>
+<script type="text/javascript" src="js/react.bundle.js"></script>
+</body>
+</html>
